@@ -3,7 +3,9 @@ translate-object
 [![Build Status](https://travis-ci.org/yamadapc/node-translate-object.svg)](https://travis-ci.org/yamadapc/node-translate-object)
 [![devDependency Status](https://david-dm.org/yamadapc/node-translate-object/dev-status.svg)](https://david-dm.org/yamadapc/node-translate-object#info=devDependencies)
 
-Translate an object representation into another based on a map.
+Translate an object representation into another based on a map. This makes it
+possible to parse objects into better (or common) structures, through
+configuration, rather than programmatically - which is a good thing, IMHO.
 
 ## Installation
 
