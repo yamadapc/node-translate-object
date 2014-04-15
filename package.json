@@ -1,0 +1,20 @@
+{
+  "name": "translate-object",
+  "description": "Translate an object representation into another based on a map.",
+  "author": "Pedro Yamada <tacla.yamada@gmail.com>",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "map",
+    "rename",
+    "object"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/yamadapc/node-translate-object",
+  "devDependencies": {
+    "mocha": "~1.18.2"
+  }
+}
