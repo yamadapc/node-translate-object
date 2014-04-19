@@ -1,0 +1,36 @@
+#!env node
+var argv     = process.argv.slice(2);
+var mapPath  = argv[0];
+var jsonPath = argv[1];
+
+if(!jsonPath || !mapPath) {
+  console.error('  Usage:');
+  console.error('  translatejson json_map target_json');
+  console.error();
+  process.exit(1);
+}
+
+var fs = require('fs');
+var translate = require('..');
+
+var json;
+try {
+  json = JSON.parse(fs.readFileSync(jsonPath));
+}
+catch(err) {
+  console.error('Invalid `target_json`');
+  process.exit(1);
+}
+
+var map;
+try {
+  map = JSON.parse(fs.readFileSync(mapPath));
+}
+catch(err) {
+  console.error('Invalid `json_map`');
+  process.exit(1);
+}
+
+var translated = translate(map, json);
+var translated_json = JSON.stringify(translated, null, 2);
+console.log(translated_json);
