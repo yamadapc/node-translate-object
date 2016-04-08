@@ -15,6 +15,6 @@
   "license": "MIT",
   "repository": "git://github.com/yamadapc/node-translate-object",
   "devDependencies": {
-    "mocha": "~2.4.2"
+    "mocha": "~2.4.3"
   }
 }
